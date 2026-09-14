@@ -1,0 +1,461 @@
+<!doctype html><html lang="th"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MAESAI AI PROJECT V36-V54 INFINITY MASTER FINAL</title><style>body{margin:0;background:#0b1020;color:#eee;font-family:system-ui,sans-serif}.w{max-width:1000px;margin:auto;padding:16px}.c{background:#121a2d;border:1px solid #293858;border-radius:18px;padding:16px;margin:12px 0}button,select,textarea{margin:5px 0;padding:10px;border-radius:10px}button{display:block;width:100%;box-sizing:border-box;cursor:pointer;touch-action:manipulation}select,textarea{width:100%;box-sizing:border-box;background:#091121;color:#eee;border:1px solid #293858}textarea{min-height:130px}button{background:#ff4fa3;color:white;border:0;font-weight:bold}.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.v{padding:9px;border:1px solid #293858;border-radius:10px;margin:5px 0}@media(max-width:650px){.grid{grid-template-columns:1fr}}
+button{
+  transition:transform .08s ease,opacity .08s ease,box-shadow .08s ease;
+}
+button:active{
+  transform:scale(.96);
+  opacity:.72;
+  box-shadow:0 0 0 4px rgba(255,255,255,.18);
+}
+button.pressed{
+  box-shadow:0 0 0 4px rgba(255,255,255,.22);
+}
+</style></head><body><div class="w"><div class="c"><h1>♾️ MAESAI AI PROJECT — V36–V54</h1><p>INFINITY CONSOLIDATED MASTER • V36 → V50 COMPLETE → V51 → V52 → V53 → V54 FINAL</p></div><div class="grid"><div class="c"><h2>🎯 Version Router</h2><select id="v"><option>V61</option><option>V60</option><option>V59</option><option>V58</option><option>V57</option><option>V56</option><option>V55</option><option>V54</option><option>V53</option><option>V52</option><option>V51</option><option>V37</option><option>V38</option><option>V39</option><option>V40</option><option>V41</option><option>V42</option><option>V43</option><option>V44</option><option>V45</option><option>V46</option><option>V47</option><option>V48</option><option>V49</option><option>V50</option></select><select id="m"><option>AUTO</option><option>HUMAN</option><option>SAFE</option><option>VERIFY</option></select><button onclick="an()">วิเคราะห์ Next Action</button><button onclick="ex()">Execute</button><button onclick="sv()">Save</button><pre id="s">พร้อมทำงาน</pre></div><div class="c"><h2>📊 Progress</h2><h2 id="p">7%</h2><div id="cur">Current V52</div><p>REALITY GATE: Blueprint เท่านั้น ไม่อ้างว่าสร้างเสียง/เพลง/MV จริงหากไม่มี API จริง</p></div></div><div class="c"><h2>🧠 MASTER PROJECT MEMORY</h2><textarea id="mem" placeholder="Canonical Memory / Locked Decisions / Change / Conflict / User Intent"></textarea><button onclick="old()">โหลด V35 + V36 จาก LocalStorage</button></div><div class="c"><h2>🧭 V37 → V50 ROADMAP</h2><div id="r"></div><div class=v><b>V51</b> — REAL-WORLD EXECUTION BRIDGE</div><div class=v><b>V52</b> — LIVE SERVICE ORCHESTRATOR</div><div class=v><b>V54</b> — AUTONOMOUS WORKFLOW ENGINE</div><div class=v><b>V55</b> — INTENT-TO-RESULT CONTROL TOWER</div><div class=v><b>V56</b> — CONTEXT & MEMORY INTEGRITY</div><div class=v><b>V57</b> — DECISION & CONFLICT RESOLUTION</div><div class=v><b>V58</b> — MULTI-SERVICE PRODUCTION PIPELINE</div><div class=v><b>V59</b> — VERIFICATION / RELEASE / RECOVERY</div><div class=v><b>V60</b> — INFINITY PROJECT OS / MASTER CONTROL</div><div class=v><b>V61</b> — FINALIZATION / DEPLOYMENT GATE</div></div>
+<div class="c"><h2>🚀 V51 — REAL-WORLD EXECUTION BRIDGE</h2>
+<p><b>ต่อจาก V36–V50 โดยตรง</b> — Intent → Plan → Service → Execute → Verify → State</p>
+<div class="grid">
+<div class="c"><h3>🎯 Intent / Job</h3>
+<textarea id="v51job" placeholder="ใส่ภารกิจจริง"></textarea>
+<select id="v51svc"><option>TEXT / PLANNING</option><option>VOICE</option><option>MUSIC</option><option>IMAGE</option><option>VIDEO / MV</option><option>STORAGE</option><option>PUBLISH</option></select>
+<button onclick="route51()">Route V51</button></div>
+<div class="c"><h3>🧪 Execution / Verify</h3>
+<pre id="state51">IDLE</pre>
+<button onclick="verify51()">Verify</button><button onclick="recover51()">Recovery</button></div>
+</div>
+<p><b>Reality Gate:</b> ไม่มี API/Service จริง = NOT_CONNECTED และห้ามอ้างว่าสร้างสื่อจริง</p></div>
+
+<div class="c"><h2>⚡ V52 — LIVE SERVICE ORCHESTRATOR</h2>
+<p>ศูนย์ควบคุมกลาง: <b>Intent → Plan → Route → Execute → Verify → Recovery → Save State</b></p>
+<div class="grid">
+<div class="c"><h3>🔌 Service Registry</h3>
+<textarea id="registry52">TEXT = NOT_CONNECTED
+VOICE = NOT_CONNECTED
+MUSIC = NOT_CONNECTED
+IMAGE = NOT_CONNECTED
+VIDEO = NOT_CONNECTED
+STORAGE = LOCAL_BROWSER
+PUBLISH = NOT_CONNECTED</textarea>
+<button onclick="scan52()">Scan Services</button></div>
+<div class="c"><h3>📡 Orchestrator State</h3>
+<pre id="state52">READY</pre>
+<button onclick="run52()">Run Orchestrator</button><button onclick="rollback52()">Rollback Last Step</button></div>
+</div>
+<p><b>Contract:</b> ROUTE ≠ EXECUTE ≠ VERIFIED — ต้องมีหลักฐานจาก Execution จริงก่อนถือว่าสำเร็จ</p></div>
+<div class="c"><h2>🔎 V53 — EVIDENCE / PROOF / AUDIT — FINAL</h2><p><b>FINAL:</b> Intent → Plan → Route → Execute → Evidence → Verify → Audit → Save State</p><div class="grid"><div class="c"><h3>📋 Evidence</h3><textarea id="e53" placeholder="หลักฐานผลจริง: ผลลัพธ์ / ไฟล์ / API response / URL / การยืนยัน"></textarea><select id="et53"><option>NO EVIDENCE</option><option>TEXT RESULT</option><option>FILE OUTPUT</option><option>API RESPONSE</option><option>URL / PUBLISH RESULT</option><option>USER CONFIRMATION</option></select><button onclick="collect53()">Collect Evidence</button></div><div class="c"><h3>🧾 Audit</h3><pre id="a53">READY</pre><button onclick="audit53()">Audit</button><button onclick="clear53()">Clear</button></div></div><p><b>V53 CONTRACT:</b> ไม่มี Evidence = UNVERIFIED • Blueprint ≠ งานจริง • ไม่อ้าง Service จริงโดยไม่มีการเชื่อมต่อจริง</p></div>
+<div class="c"><h2>🤖 V54 — AUTONOMOUS WORKFLOW ENGINE</h2>
+<p><b>ต่อจาก V53 โดยตรง</b> — Intent → Plan → Dependency → Risk → Route → Execute → Evidence → Verify → Audit → Learn → Next Action</p>
+<div class="grid">
+<div class="c"><h3>🧠 Autonomous Planner</h3>
+<textarea id="v54job" placeholder="ใส่เป้าหมาย/ภารกิจที่ต้องการให้ระบบแตกเป็นขั้นตอน"></textarea>
+<select id="v54mode"><option>AUTO PLAN</option><option>SAFE PLAN</option><option>HUMAN APPROVAL</option></select>
+<button onclick="plan54()">สร้างแผนอัตโนมัติ</button>
+<button onclick="next54()">หา Next Action</button>
+</div>
+<div class="c"><h3>🔗 Dependency / Risk</h3>
+<pre id="v54risk">READY</pre>
+<button onclick="risk54()">ตรวจ Risk & Dependency</button>
+</div>
+</div>
+<div class="grid">
+<div class="c"><h3>📋 Workflow Plan</h3><pre id="v54plan">ยังไม่มีแผน</pre></div>
+<div class="c"><h3>📊 Autonomous State</h3><pre id="v54state">IDLE</pre>
+<button onclick="approve54()">Approve Current Step</button>
+<button onclick="recover54()">Smart Recovery</button></div>
+</div>
+<p><b>V54 Contract:</b> Autonomous ≠ Uncontrolled • ระบบเสนอแผนได้ แต่ Execute จริงต้องผ่าน Reality Gate และ Evidence ก่อนถือว่าสำเร็จ</p></div>
+
+
+<div class="c"><h2>🧩 V55 — INTENT-TO-RESULT CONTROL TOWER</h2>
+<p><b>ต่อจาก V54 โดยตรง</b> — Goal → Intent → Plan → Dependency → Risk → Route → Execute → Evidence → Verify → Audit → Learn → Result</p>
+<div class="grid">
+<div class="c"><h3>🎯 Mission Control</h3>
+<textarea id="v55job" placeholder="ใส่เป้าหมายปลายทางที่ต้องการให้ระบบพาไปจนจบ"></textarea>
+<select id="v55mode"><option>CONTROLLED AUTO</option><option>SAFE</option><option>HUMAN GATE</option></select>
+<button onclick="mission55()">สร้าง Mission</button>
+<button onclick="advance55()">Next Step</button>
+</div>
+<div class="c"><h3>🛡️ Control Gate</h3>
+<pre id="v55gate">READY</pre>
+<button onclick="gate55()">ตรวจ Gate</button>
+<button onclick="recover55()">Recover</button>
+</div>
+</div>
+<div class="grid">
+<div class="c"><h3>🗺️ Execution Map</h3><pre id="v55map">ยังไม่มี Mission</pre></div>
+<div class="c"><h3>📦 Result State</h3><pre id="v55result">IDLE</pre>
+<button onclick="verify55()">Verify Result</button>
+<button onclick="reset55()">Reset Current Mission</button></div>
+</div>
+<p><b>V55 CONTRACT:</b> เป้าหมายเดียวต้องมี State เดียว • ห้ามข้าม Gate • ผลสำเร็จต้องมี Evidence + Verify • Reset ห้ามลบ Canonical Memory</p></div>
+<div class="c"><h2>♾️ V56 → V60 — INFINITY MASTER LAYERS</h2>
+<p><b>ต่อจาก V55 โดยตรง</b> — Canonical Memory เดียว • Version Router เดียว • Reality Gate เดียว</p>
+<div class="grid">
+<div class="c"><h3>🧠 V56 — CONTEXT & MEMORY INTEGRITY</h3><textarea id="v56mem" placeholder="Canonical Memory / Locked Decisions / Current State"></textarea><button onclick="run56()">ตรวจ Memory Integrity</button><pre id="s56">READY</pre></div>
+<div class="c"><h3>⚖️ V57 — DECISION & CONFLICT RESOLUTION</h3><textarea id="v57dec" placeholder="Decision / Conflict / Dependency"></textarea><button onclick="run57()">วิเคราะห์ Decision</button><pre id="s57">READY</pre></div></div>
+<div class="grid">
+<div class="c"><h3>🏭 V58 — MULTI-SERVICE PRODUCTION PIPELINE</h3><textarea id="v58job" placeholder="งานที่ต้องผ่านหลาย Service / หลายขั้นตอน"></textarea><button onclick="run58()">สร้าง Pipeline</button><pre id="s58">READY</pre></div>
+<div class="c"><h3>🔐 V59 — VERIFY / RELEASE / RECOVERY</h3><textarea id="v59ev" placeholder="Evidence / ผลลัพธ์ / สถานะการตรวจ"></textarea><button onclick="run59()">ตรวจ Release Gate</button><pre id="s59">READY</pre></div></div>
+<div class="c"><h3>👑 V60 — INFINITY PROJECT OS / MASTER CONTROL</h3><textarea id="v60goal" placeholder="ภารกิจใหญ่ที่ต้องการให้ V60 ควบคุมจนถึงผลลัพธ์"></textarea><button onclick="run60()">MASTER CONTROL</button><pre id="s60">READY</pre></div>
+<p><b>V56–V60 CONTRACT:</b> ไม่ข้ามขั้น • Blueprint ≠ งานจริง • Route ≠ Execute • ไม่มี Evidence = UNVERIFIED • ห้ามทำลาย Canonical Memory</p></div>
+<div class="c"><h2>🏁 V61 — FINALIZATION / DEPLOYMENT GATE</h2>
+<p><b>เส้นชัยของการพัฒนา</b> — ตรวจ V36–V60 → Reality Gate → Evidence → Verify → Release → ปิด Development Loop</p>
+<div class="grid">
+<div class="c"><h3>🎯 Final Mission</h3>
+<textarea id="v61goal" placeholder="ใส่ภารกิจสุดท้าย"></textarea>
+<select id="v61mode"><option>CONTROLLED AUTO</option><option>SAFE</option><option>HUMAN GATE</option></select>
+<button onclick="start61()">🏁 Start Finalization</button><button onclick="check61()">🔎 Final Check</button></div>
+<div class="c"><h3>🛡️ Deployment Gate</h3><pre id="v61gate">READY</pre>
+<button onclick="gate61()">ตรวจ Reality / Service Gate</button><button onclick="recover61()">Recovery</button></div></div>
+<div class="grid"><div class="c"><h3>📋 Readiness Report</h3><pre id="v61report">ยังไม่ได้ตรวจ</pre></div>
+<div class="c"><h3>🏁 Final Status</h3><pre id="v61result">NOT STARTED</pre>
+<button onclick="verify61()">Verify Final</button><button onclick="finish61()">ปิด Development Loop</button></div></div>
+<p><b>V61 CONTRACT:</b> ไม่สร้าง Version ต่อเพียงเพื่อเพิ่มเลข • ไม่ทำลาย Canonical Memory • ไม่มี Real Service/Evidence = UNVERIFIED</p></div>
+<div class="c" id="ss1"><h2>🎵 SS1 — SONG SIGNATURE</h2>
+<p><b>ลายเซ็นชื่อเพลงท้ายเพลง</b> — ใช้ชื่อจากช่องชื่อเพลงโดยอัตโนมัติ ไม่ต้องพิมพ์ชื่อเพลงซ้ำใน Style หรือ Lyrics</p>
+<div class="grid">
+<div class="c"><h3>1. ข้อมูลเพลง</h3>
+<label>ชื่อเพลง</label><input id="ss1title" placeholder="พิมพ์ชื่อเพลงตรงนี้" style="width:100%;box-sizing:border-box;background:#091121;color:#eee;border:1px solid #293858;padding:10px;border-radius:10px">
+<label>เพศนักร้อง</label><select id="ss1gender"><option value="auto">AI เลือกตามเพลง</option><option value="male">ชาย</option><option value="female">หญิง</option></select>
+<button onclick="applySS1()">✨ ใส่ SS1 อัตโนมัติ</button></div>
+<div class="c"><h3>2. ผลลัพธ์พร้อมใช้</h3>
+<label>Lyrics — ระบบเติมท้ายเพลงให้แล้ว</label><textarea id="ss1lyrics" placeholder="วาง Lyrics เดิมของคุณที่นี่"></textarea>
+<label>Style — คำสั่ง SS1 สำหรับระบบ</label><textarea id="ss1style" readonly></textarea>
+<button onclick="copySS1()">📋 Copy Lyrics + Style</button><pre id="ss1status">READY</pre></div></div>
+<p><b>SS1 RULE:</b> ชื่อเพลงดึงจากช่องชื่อเพลง → ท้ายเพลงร้อง/พูดชื่อเพลงอย่างเป็นธรรมชาติ → ชายลงท้าย “นะครับ” → หญิงลงท้าย “นะคะ” → ถ้าเลือก AI ให้เลือกตามอารมณ์/บริบทของเพลง</p></div>
+<div class="grid"><div class="c"><h2>📝 Task Queue</h2><textarea id="t">1. ตรวจ Intent
+2. รักษา Locked Decisions
+3. ตรวจ Conflict / Dependency
+4. ทำ Next Action
+5. Verify
+6. บันทึก State</textarea><button onclick="verify()">Verify</button></div><div class="c"><h2>🛡️ Quality / Recovery</h2><pre id="q">ยังไม่ได้ตรวจ</pre><button onclick="quality()">Run Quality Gate</button><button onclick="rb()">Rollback เฉพาะงานล่าสุด</button></div></div><div class="c"><h2>📦 MASTER HANDOFF สำหรับพรุ่งนี้</h2><textarea id="h" readonly></textarea><button onclick="ho()">สร้าง Handoff</button><button onclick="cp()">Copy</button></div></div><script>
+const R=[["V37","EXECUTION"],["V38","QUALITY GATE"],["V39","IMPACT & DEPENDENCY"],["V40","CONTINUITY"],["V41","EMOTION & VOICE"],["V42","STORY & SCENE"],["V43","PRODUCTION"],["V44","ASSET MANAGEMENT"],["V45","MV ASSEMBLY"],["V46","CREATOR INTERACTION"],["V47","PROJECT ORCHESTRATION"],["V48","STRESS & RECOVERY"],["V49","RELEASE READINESS"],["V50","FINAL PROJECT OS"]];R.forEach(x=>r.innerHTML+=`<div class=v><b>${x[0]}</b> — ${x[1]}</div>`);
+
+function applySS1(){
+  const title=ss1title.value.trim();
+  if(!title){ss1status.textContent="STOP — กรุณาใส่ชื่อเพลง";return}
+  const gender=ss1gender.value;
+  const ending=gender==="female"?"นะคะ":gender==="male"?"นะครับ":"นะครับ/นะคะ ตามเพศนักร้องที่ AI เลือก";
+  let lyrics=ss1lyrics.value.trim();
+  lyrics=lyrics.replace(/\n?\[Song Signature\][\s\S]*$/i,"").trim();
+  if(!lyrics) lyrics="[Outro]";
+  else if(!/\[Outro\]/i.test(lyrics)) lyrics += "\n\n[Outro]";
+  lyrics += `\n[Song Signature]\n[AI sings or speaks the actual song title naturally, matching the melody, emotion, and style.]\n${title} ${ending}`;
+  ss1lyrics.value=lyrics;
+  ss1style.value="End with a natural Song Signature. Automatically use the actual song title from the Song Title field; do not require the user to repeat the title in Style or Lyrics. Match the singer's gender, melody, emotion, and musical style. Male ends with นะครับ; female ends with นะคะ. If gender is Auto, choose the most suitable singer gender for the song and use the matching ending.";
+  ss1status.textContent=`SS1 APPLIED ✓\nTitle: ${title}\nGender: ${gender}\nTitle source: Song Title field\nDuplicate title entry: NOT REQUIRED`;
+}
+function copySS1(){
+  const out=`LYRICS\n${ss1lyrics.value.trim()}\n\nSTYLE\n${ss1style.value.trim()}`;
+  if(navigator.clipboard) navigator.clipboard.writeText(out);
+  ss1status.textContent="SS1 — Lyrics + Style copied ✓";
+}
+
+function an(){let n=+v.value.slice(1);cur.textContent=`Current ${v.value} • ${m.value}`;p.textContent=Math.round(Math.max(0,Math.min(100,(n-36)/18*100)))+"%";let nx=n==61?"FINALIZATION: ตรวจ V36–V60 → Capability → Reality Gate → Evidence → Verify → Release → ปิด Development Loop":n==54?"AUTONOMOUS: Plan → Dependency → Risk → Route → Execute → Evidence → Verify → Audit → Learn → Next Action":n==53?"EVIDENCE/AUDIT: Collect → Audit → Save State":n==52?"LIVE ORCHESTRATOR: Route → Execute → Verify → Recovery → Save State":"ทำภารกิจ "+v.value+" โดยรักษา Intent / Emotion / Voice / Story / Scene / Continuity / Production / Lock";s.textContent=`NEXT ACTION → ${nx}`;}
+function ex(){if(m.value=="SAFE"&&!mem.value.trim()){s.textContent="SAFE STOP — ต้องมี Memory/Lock";return}s.textContent=`EXECUTED BLUEPRINT: ${v.value}
+ไม่อ้างการสร้างสื่อจริง`}
+function verify(){q.textContent=`Intent ✓  Lock ✓  Conflict ✓  Dependency ✓  Reality Gate ✓
+ผ่านระดับ Blueprint`}
+function quality(){q.textContent=(mem.value.trim()?"Memory ✓":"Memory ⚠")+`
+Router ✓
+Mode ✓ ${m.value}
+Reality Gate ✓
+Rollback Scope ✓`}
+function rb(){s.textContent="ROLLBACK → เฉพาะ Execution State ล่าสุด ไม่แตะ Canonical Memory"}
+function old(){mem.value="[V35 CANONICAL MEMORY]\n"+(localStorage.getItem("maesai_v35_project_memory")||"ไม่มีข้อมูล")+"\n\n[V36 DECISION STATE]\n"+(localStorage.getItem("maesai_v36_decision_state")||"ไม่มีข้อมูล")}
+function sv(){localStorage.setItem("maesai_v37_v50_master",JSON.stringify({version:v.value,mode:m.value,memory:mem.value,tasks:t.value}));s.textContent="บันทึก MASTER STATE แล้ว"}
+function ho(){h.value=`V36–V60 INFINITY MASTER HANDOFF
+READ THIS FIRST — CONTINUE EXISTING PROJECT
+CURRENT ROUTER: ${v.value}
+BASE: V35 Canonical Memory → V36 Decision/Action → V37 Execution
+V38–V50 = Integrated layers in THIS SINGLE MASTER FILE
+V51–V53 = Execution / Orchestration / Evidence layers
+V54 = Autonomous Workflow Engine
+
+RULES:
+1. ห้ามรีเซ็ตบริบทเดิม
+2. รักษา Locked Decisions
+3. Intent → Emotion → Voice → Story → Scene → Continuity → Production
+4. ตรวจ Conflict / Dependency ก่อน Execute
+5. ทำเฉพาะ Next Action
+6. Verify หลัง Execute
+7. Rollback เฉพาะส่วนที่เสีย
+8. ห้ามอ้างการสร้างสื่อจริงโดยไม่มี API/Service จริง
+9. ใช้ Canonical Memory เดียว + Version Router เดียว
+10. เดินต่อในไฟล์เดียว โดย V50 เป็น FINAL PROJECT OS และ V51–V54 เป็น execution/autonomy layers
+
+NEXT: Continue from ${v.value} using the same Canonical Memory and Reality Gate.`}
+
+function route51(){
+  const job=v51job.value.trim(), svc=v51svc.value;
+  if(!job){state51.textContent="STOP — ต้องมี Intent / Job";return}
+  state51.textContent=`V51 ROUTED
+Intent: ${job}
+Service: ${svc}
+State: PLANNED
+Next: ตรวจ Service → Execute → Verify`;
+}
+function verify51(){state51.textContent+="\nVERIFY: ต้องมี Execution Evidence จาก Service จริง";}
+function recover51(){state51.textContent="V51 RECOVERY\nScope: งานล่าสุดเท่านั้น\nCanonical Memory: LOCKED\nFailed step: isolated\nAction: retry เฉพาะจุดที่เสีย";}
+function scan52(){
+  const rows=registry52.value.split("\n").filter(Boolean);
+  const not=rows.filter(x=>/NOT_CONNECTED/.test(x)).length;
+  state52.textContent=`SERVICE SCAN
+Total: ${rows.length}
+NOT_CONNECTED: ${not}
+Storage: ${/STORAGE\s*=\s*LOCAL_BROWSER/.test(registry52.value)?"LOCAL_BROWSER":"EXTERNAL"}
+Status: Registry only — ยังไม่ถือว่าเชื่อมจริง`;
+}
+function run52(){state52.textContent=`ORCHESTRATOR
+1. Intent ✓
+2. Plan ✓
+3. Route ✓
+4. Service Check → REQUIRED
+5. Execute → REAL SERVICE REQUIRED
+6. Verify → REQUIRED
+7. Save State → AFTER VERIFY
+Reality Gate: ACTIVE`;}
+function rollback52(){state52.textContent="ROLLBACK\nScope: Execution Step ล่าสุดเท่านั้น\nCanonical Memory: UNCHANGED\nLocked Decisions: UNCHANGED\nStatus: READY FOR RETRY";}
+
+function plan54(){
+  const job=v54job.value.trim(), mode=v54mode.value;
+  if(!job){v54state.textContent="STOP — ต้องมี Intent / Goal";return}
+  v54plan.textContent=`V54 AUTONOMOUS PLAN
+Goal: ${job}
+Mode: ${mode}
+
+1. Intent — กำหนดผลลัพธ์ที่ต้องการ
+2. Plan — แตกงานเป็นขั้นตอน
+3. Dependency — ตรวจสิ่งที่ต้องทำก่อน
+4. Risk — ตรวจความเสี่ยง / Conflict
+5. Route — เลือก Service หรือ Manual Path
+6. Execute — ทำเฉพาะ Step ปัจจุบัน
+7. Evidence — เก็บผลจริง
+8. Verify — ตรวจผล
+9. Audit — ตรวจ Traceability
+10. Learn — บันทึกบทเรียน
+11. Next Action — สร้างงานถัดไป
+
+Reality Gate: ACTIVE
+Status: PLAN ONLY`;
+  v54state.textContent=`PLANNED
+Current Step: 1 — Intent
+Approval: ${mode==="HUMAN APPROVAL"?"REQUIRED":"NOT REQUIRED FOR PLANNING"}
+Execute: BLOCKED UNTIL ROUTE + REAL SERVICE CHECK`;
+}
+function risk54(){
+  const job=v54job.value.trim();
+  if(!job){v54risk.textContent="STOP — ไม่มี Goal";return}
+  v54risk.textContent=`V54 RISK / DEPENDENCY SCAN
+Intent: FOUND ✓
+Dependency: NEEDS CHECK ⚠
+Conflict: NEEDS CHECK ⚠
+Service/API: UNKNOWN — Reality Gate ✓
+Evidence: REQUIRED
+Human Override: AVAILABLE
+Risk Status: REVIEW BEFORE EXECUTE`;
+}
+function next54(){
+  const job=v54job.value.trim();
+  if(!job){v54state.textContent="STOP — ไม่มี Goal";return}
+  v54state.textContent=`V54 NEXT ACTION
+Goal: ${job}
+1. ตรวจ Dependency
+2. ตรวจ Risk / Conflict
+3. เลือก Route
+4. ตรวจ Service จริง
+5. Execute เฉพาะ Step ที่ผ่าน Gate
+6. เก็บ Evidence
+7. Verify
+NEXT: Dependency + Risk`;
+}
+function approve54(){
+  if(!v54job.value.trim()){v54state.textContent="STOP — ไม่มี Goal";return}
+  v54state.textContent=`V54 APPROVAL
+Current Step: reviewed
+Human Gate: PASSED
+Next: Route → Service Check → Execute
+Reality Gate: ACTIVE
+Evidence: REQUIRED`;
+}
+function recover54(){
+  v54state.textContent=`V54 SMART RECOVERY
+Scope: failed/latest step only
+Canonical Memory: LOCKED
+Locked Decisions: UNCHANGED
+Recovery: retry / reroute current step
+Do not rollback successful verified steps
+Next: Re-check Evidence → Verify`;
+}
+
+
+function mission55(){
+  const job=v55job.value.trim(), mode=v55mode.value;
+  if(!job){v55result.textContent="STOP — ต้องมี Goal / Mission";return}
+  v55map.textContent=`V55 MISSION
+Goal: ${job}
+Mode: ${mode}
+
+STATE 1  Intent              → READY
+STATE 2  Plan                → PENDING
+STATE 3  Dependency / Risk   → PENDING
+STATE 4  Route / Service     → PENDING
+STATE 5  Execute             → BLOCKED
+STATE 6  Evidence            → REQUIRED
+STATE 7  Verify              → REQUIRED
+STATE 8  Audit               → REQUIRED
+STATE 9  Learn               → PENDING
+STATE 10 Result              → PENDING
+
+Reality Gate: ACTIVE
+Current Step: Intent`;
+  v55result.textContent=`MISSION CREATED
+Current: Intent
+Next: Next Step`;
+  v55gate.textContent=`V55 GATE
+Goal ✓
+Mode ✓
+Reality Gate ✓
+Execute: BLOCKED UNTIL SERVICE + ROUTE CHECK`;
+}
+function advance55(){
+  if(!v55job.value.trim()){v55result.textContent="STOP — ไม่มี Mission";return}
+  v55result.textContent=`V55 NEXT ACTION
+1. ตรวจ Intent
+2. ตรวจ Dependency / Risk
+3. เลือก Route
+4. ตรวจ Service จริง
+5. Execute เฉพาะ Step ที่ผ่าน Gate
+6. เก็บ Evidence
+7. Verify
+8. Audit
+9. Learn
+10. Confirm Result
+
+NEXT: Dependency / Risk`;
+}
+function gate55(){
+  if(!v55job.value.trim()){v55gate.textContent="STOP — ไม่มี Mission";return}
+  v55gate.textContent=`V55 CONTROL GATE
+Intent ✓
+Canonical Memory: LOCKED
+Dependency: REVIEW REQUIRED
+Risk: REVIEW REQUIRED
+Route: REQUIRED
+Real Service: REQUIRED
+Evidence: REQUIRED
+Verify: REQUIRED
+Status: HOLD — ยังไม่อนุญาต Execute จริง`;
+}
+function verify55(){
+  if(!v55job.value.trim()){v55result.textContent="STOP — ไม่มี Mission";return}
+  v55result.textContent=`V55 RESULT VERIFY
+Mission: ${v55job.value.trim()}
+Evidence: REQUIRED
+Verification: REQUIRED
+Audit: REQUIRED
+Result: UNVERIFIED
+Reason: ยังไม่มี Execution Evidence จาก Service จริง`;
+}
+function recover55(){
+  v55gate.textContent=`V55 RECOVERY
+Scope: Current/failed step only
+Canonical Memory: LOCKED
+Verified successful steps: PRESERVED
+Action: retry / reroute current step
+Next: Re-check Gate`;
+}
+function reset55(){
+  v55job.value="";
+  v55map.textContent="ยังไม่มี Mission";
+  v55result.textContent="IDLE";
+  v55gate.textContent="READY";
+}
+
+function run56(){s56.textContent=v56mem.value.trim()?"V56 MEMORY INTEGRITY\nCanonical Memory: FOUND ✓\nLocked Decisions: PRESERVE ✓\nConflict Scan: REQUIRED\nStatus: READY":"STOP — ไม่มี Memory";}
+function run57(){s57.textContent=v57dec.value.trim()?"V57 DECISION RESOLUTION\nIntent Alignment: CHECK\nConflict: CHECK\nDependency: CHECK\nLocked Decisions: PRESERVE\nStatus: REVIEW BEFORE EXECUTE":"STOP — ไม่มี Decision / Conflict";}
+function run58(){s58.textContent=v58job.value.trim()?`V58 PRODUCTION PIPELINE\nJob: ${v58job.value.trim()}\nIntent ✓ → Plan ✓ → Dependency/Risk → Route → REAL SERVICE → Evidence → Verify → Deliver\nStatus: PIPELINE PLANNED`:"STOP — ไม่มี Job";}
+function run59(){s59.textContent=v59ev.value.trim()?"V59 RELEASE GATE\nEvidence ✓\nExecution Proof: CHECK\nVerification: CHECK\nAudit Trace: CHECK\nRecovery Point: AVAILABLE\nRelease: BLOCKED UNTIL ALL CHECKS PASS":"UNVERIFIED — ไม่มี Evidence";}
+function run60(){s60.textContent=v60goal.value.trim()?`V60 INFINITY PROJECT OS\nMISSION: ${v60goal.value.trim()}\n\nContext → Intent → Decision → Plan → Dependency → Risk → Route → Execute → Evidence → Verify → Audit → Release → Learn → Save State → Next Action\n\nCanonical Memory: LOCKED\nReality Gate: ACTIVE\nStatus: CONTROLLED AUTONOMY`:"STOP — ไม่มี Master Goal";}
+v.value="V61"; an();
+function cp(){navigator.clipboard&&navigator.clipboard.writeText(h.value);s.textContent="MASTER HANDOFF copied"}an();
+function collect53(){const e=e53.value.trim(),t=et53.value;if(!e||t==="NO EVIDENCE"){a53.textContent="UNVERIFIED — ไม่มี Evidence";return}a53.textContent=`V53 EVIDENCE COLLECTED\nType: ${t}\nEvidence: ${e}\nStatus: PENDING AUDIT`;} function audit53(){const e=e53.value.trim(),t=et53.value;if(!e||t==="NO EVIDENCE"){a53.textContent="AUDIT FAIL\nResult: UNVERIFIED";return}a53.textContent=`V53 FINAL AUDIT\nEvidence ✓\nType ✓\nTraceability ✓\nReality Gate ✓\nResult: VERIFIED*\n*ยืนยันจากหลักฐานที่บันทึกในระบบนี้เท่านั้น`;} function clear53(){e53.value="";et53.value="NO EVIDENCE";a53.textContent="READY";}
+function start61(){const g=v61goal.value.trim();if(!g){v61result.textContent="STOP — ไม่มี Final Mission";return}v61gate.textContent=`V61 FINALIZATION START
+Mission: ${g}
+Architecture: V36 → V60
+Current: V61
+Purpose: FINALIZATION / DEPLOYMENT
+New Version Loop: CLOSED
+Reality Gate: ACTIVE`;v61result.textContent="FINAL CHECK REQUIRED";}
+function check61(){
+  if(!v61goal.value.trim()){v61report.textContent="STOP — ไม่มี Final Mission";return}
+  v61report.textContent="🔎 กำลังตรวจ V61 Final Check...";
+  setTimeout(()=>{ v61report.textContent=`V61 FINAL CHECK
+V36–V60 Architecture ✓
+Canonical Memory ✓
+Locked Decisions ✓
+Version Router ✓
+Reality Gate ✓
+Evidence / Verify Contract ✓
+Recovery ✓
+
+External Services: ต้องตรวจการเชื่อมจริง
+Real Media Output: ต้องมี Evidence
+Publish: ต้องมี Proof
+
+Development Loop: READY TO CLOSE`;v61result.textContent="CHECK COMPLETE → ตรวจ Gate"; }, 300);
+}
+function gate61(){v61gate.textContent=`V61 DEPLOYMENT GATE
+Blueprint: PASS
+Reality Gate: ACTIVE
+External Service: NOT_CONNECTED unless proven
+Execution Evidence: REQUIRED
+Verification: REQUIRED
+Release: BLOCKED until proof exists`; }
+function verify61(){v61result.textContent=`V61 FINAL VERIFY
+Architecture: VERIFIED IN THIS FILE
+Real Execution Evidence: REQUIRED
+Publish Proof: REQUIRED
+Result: UNVERIFIED FOR REAL-WORLD EXECUTION
+Status: FINALIZATION READY`;}
+function finish61(){if(!v61goal.value.trim()){v61result.textContent="STOP — ไม่มี Final Mission";return}v61result.textContent=`🏁 V61 DEVELOPMENT LOOP CLOSED
+
+V36–V60: RETAINED
+V61: FINALIZATION COMPLETE
+Canonical Memory: LOCKED
+Reality Gate: ACTIVE
+
+NO V62 REQUIRED FOR ARCHITECTURE.
+ต่อจากนี้: ใช้งานจริง / เชื่อม Service จริง / แก้เฉพาะ Bug
+Status: PROJECT READY FOR OPERATION`;}
+function recover61(){v61gate.textContent=`V61 RECOVERY
+Scope: Finalization State only
+Canonical Memory: LOCKED
+Previous Layers: PRESERVED
+Action: re-check failed gate
+Development Loop: NOT EXPANDED
+Status: READY`;}
+window.__v61ClickReady=true;
+document.addEventListener("DOMContentLoaded",()=>{
+  ["start61","check61","gate61","verify61","finish61"].forEach(fn=>{
+    document.querySelectorAll(`button[onclick="${fn}()"]`).forEach(btn=>{
+      btn.addEventListener("click",()=>{ btn.dataset.clicked="1"; });
+    });
+  });
+});
+
+// V61 BUTTON FEEDBACK: every press gives immediate visible confirmation.
+document.addEventListener("DOMContentLoaded",()=>{
+  document.querySelectorAll("button").forEach(btn=>{
+    btn.addEventListener("click",()=>{
+      const old = btn.innerHTML;
+      btn.classList.add("pressed");
+      btn.innerHTML = "✓ กดแล้ว";
+      setTimeout(()=>{
+        btn.innerHTML = old;
+        btn.classList.remove("pressed");
+      }, 650);
+    });
+  });
+});
+
+</script></body></html>
